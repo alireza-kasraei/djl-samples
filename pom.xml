@@ -14,6 +14,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
+        <slf4j.version>2.24.3</slf4j.version>
     </properties>
 
     <dependencyManagement>
@@ -64,6 +65,22 @@
             <groupId>tech.tablesaw</groupId>
             <artifactId>tablesaw-jsplot</artifactId>
             <version>0.44.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j2-impl</artifactId>
+            <version>${slf4j.version}</version>
         </dependency>
 
     </dependencies>
