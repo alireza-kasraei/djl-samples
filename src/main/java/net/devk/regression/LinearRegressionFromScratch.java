@@ -25,9 +25,9 @@ import java.util.function.Supplier;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 
-public class LinearRegression {
+public class LinearRegressionFromScratch {
 
-    private static final Logger logger = LoggerFactory.getLogger(LinearRegression.class);
+    private static final Logger logger = LoggerFactory.getLogger(LinearRegressionFromScratch.class);
 
 
     public static ScatterTrace createLineTrace(double min, double max, float weight, float bias) {
